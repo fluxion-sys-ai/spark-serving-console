@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/fluxion-sys-ai/workstation-serving-stack",
+  "commit": "c85a6d8400e5bf1fa36dbd57bbb65f4caa8750b0",
+  "reused": [
+    "frontend/src/styles.css (as upstream.css)",
+    "frontend/src/format.ts",
+    "frontend/src/theme.ts",
+    "frontend/src/components/StatTile.tsx",
+    "frontend/src/components/Sparkline.tsx",
+    "frontend/src/components/charts.tsx",
+    "fluxion-icon-transparent.svg",
+    "Frontend dependency configuration and TypeScript settings"
+  ],
+  "adapted": "controller/metrics.py telemetry approach; Spark-specific memory handling, llama.cpp counters, null handling and session-aware rates added",
+  "backend": "New small controller around existing Spark launchers; does not install or modify model runtimes"
+}
